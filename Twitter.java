@@ -13,19 +13,6 @@ class TweetHandler {
     private Map<String, Integer> hmap = new HashMap<String, Integer>();
     private List<Map.Entry<String, Integer>> list;
     private HashMap<String, Integer> top10Hashtags;
-    private String tweet;
-
-    public void setTweet(String tweet) {
-        this.tweet = tweet;
-    }
-
-    public String getTweet() {
-        return this.tweet;
-    }
-
-    public HashMap<String, Integer> getTop10Hashtags() {
-        return this.top10Hashtags;
-    }
 
     // Function to process tweet text
     // Takes tweet as input, splits, filters hashtags (tokens that're starting with '#').
